@@ -5,4 +5,15 @@ https://insights.infoblox.com/resources-deployment-guides/infoblox-deployment-gu
 -	Grid Manager  : single VM for both NU and NR : in addition to option 2 you need also the option 4 – NIOS license, you select the model that you have deployed after the prompt.
 -	Member : 2 VMs ( Infoblox-NR, Infoblox-NU ) : in addition to option 1 you need also the option 4 – NIOS license, you select the model that you have deployed after the prompt.
 
+## Grid master
+```
+set network
+set temp_license 
+```
 
+## Member
+```
+set hardware-type IB-FLEX
+# reboot
+set network
+```
